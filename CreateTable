@@ -1,0 +1,19 @@
+CREATE TABLE `PLANT` (
+ `NAME` varchar(50) default NULL,
+ `SPECIES` varchar(50) default NULL,
+ `SEED_DATE` DATE default NULL,
+) ENGINE = PLANT DEFAULT CHARSET = latin1;
+
+INSERT INTO PLANT VALUES ('Marchantia1', 'Bryophyte', '2012-06-16');
+INSERT INTO PLANT VALUES ('Cycas1', 'Gymnosperm', '2017-05-10');
+INSERT INTO PLANT VALUES ('Marchantia2', 'Bryophyte', '2016-09-27');
+
+CREATE TABLE `WEATHER` (
+ `PLANT_SPECIES` varchar(50) default NULL,
+ `TYPE` varchar(50) default NULL,
+) ENGINE = WEATHER DEFAULT CHARSET = latin1;
+
+INSERT INTO WEATHER VALUES ('Bryophyte', 'Sunny');
+INSERT INTO WEATHER VALUES ('Gymnosperm', 'Rainy');
+INSERT INTO WEATHER VALUES ('Gymnosperm', 'Sunny');
+INSERT INTO WEATHER VALUES ('Gymnosperm', 'Dry');
